@@ -120,7 +120,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                       builder: (context) => HomeScreen()));
                             } else {
                               const snackBar = SnackBar(
-                                content: Text('Invalid credentials6'),
+                                content: Text('Invalid credentials'),
                               );
 
                               // Find the ScaffoldMessenger in the widget tree
