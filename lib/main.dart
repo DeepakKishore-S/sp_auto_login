@@ -26,13 +26,13 @@ class _MyAppState extends State<MyApp> {
     getUserlogin();
   }
 
-  getUserlogin() async {
+  getUserlogin()async{
    login= await SharedPref.getbool(Authentication);
    setState(() {});
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context){
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
