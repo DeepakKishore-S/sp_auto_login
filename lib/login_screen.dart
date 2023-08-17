@@ -42,7 +42,7 @@ class _LoginScreenState extends State<LoginScreen> {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(20.0),
+          padding: const EdgeInsets.all(15.0),
           child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -113,6 +113,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             if (mailcontroller.text == email &&
                                 passwordcontroller.text == pwd) {
                               await SharedPref.savebool(Authentication, true);
+                              // ignore: use_build_context_synchronously
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
@@ -136,12 +137,13 @@ class _LoginScreenState extends State<LoginScreen> {
                         height: 15,
                       ),
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           const Text(
                             "If you don't have a account?",
                             style: TextStyle(fontSize: 17),
                           ),
+                        
                           TextButton(
                             onPressed: () {
                               Navigator.push(
@@ -150,6 +152,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                       builder: (context) =>
                                           const RegistryScreen()));
                             },
+                          
                             child: const Text(
                               "SignUp",
                               style: TextStyle(fontSize: 17),
