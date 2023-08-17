@@ -3,7 +3,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:sharedpreference_task/homescreen.dart';
 import 'package:sharedpreference_task/registry.dart';
 import 'package:sharedpreference_task/shared.dart';
-
 import 'constant.dart';
 
 class LoginScreen extends StatefulWidget {
