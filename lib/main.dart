@@ -4,7 +4,6 @@ import 'package:sharedpreference_task/homescreen.dart';
 import 'package:sharedpreference_task/shared.dart';
 // import 'package:google_fonts/google_fonts.dart';
 // import 'package:sharedpreference_task/registry.dart';
-
 import 'login_screen.dart';
 
 void main() {
